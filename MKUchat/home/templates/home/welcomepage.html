@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome page</title>
+        <link href="{% static 'home/styles.css' %}" rel="stylesheet">
+    </head>
+    <body class="welcome">
+        <h1>Welcome to MKUchat</h1>
+        <p>MKUchat is a soial media created to connect MKU students. in order to creat MKUchat Account you 
+            must be an MKU student.
+        </p>
+        <p>If you already have an MKUchat account, kindly click the <strong>Login</strong> button to get access to your 
+            account!</p>
+        <p>In case you don't have an account, click on <strong>CreateAnAccount</strong>  to create one for free</p>
+        <br>
+        <a class="button button1" href="{% url 'loginpage' %}">Login</a>
+        <a class="button button2" href="{% url 'createaccount' %}">CreateAnAccount</a>
+    </body>
+</html>
