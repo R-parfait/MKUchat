@@ -7,10 +7,13 @@ def welcomepage(request):
     return render(request, "home/Welcomepage.html")
 
 def loginpage(request):
-    return HttpResponse("Login Form")
+    return render(request, "home/login.html")
 
 def createaccount(request):
     return HttpResponse("we shoud have the form to create an account here")
 
 def logoutpage(request):
     return HttpResponse("You have succesfully logged out")
+
+def homepage(request):
+    return render(request,"home/home.html")
