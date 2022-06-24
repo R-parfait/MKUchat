@@ -17,6 +17,7 @@
                         <img src="{% static 'home/notification.png' %}">
                         <img src="{% static 'home/inbox.png' %}">
                         <img src="{% static 'home/videoo.png' %}">
+                        
                     </li>
                 </ul>
             </div>
@@ -28,6 +29,10 @@
                 <div class="nav-user-icon online">
                     <img src="{% static 'home/profile-pic.jpg' %}">
                 </div>
+                <div class="logout">
+                    <a href="{% url 'users:logoutpage' %}">LogOut</a>
+                </div>
+                
             </div>
         </nav>
 
