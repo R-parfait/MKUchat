@@ -9,7 +9,7 @@
         <div class="left-sidebar">
             <div class="imp-links">
                 <a href="#"><img src="{% static 'home/news.png' %}">Latest News</a>
-                <a href="#"><img src="{% static 'home/friends.png' %}"> Friends</a>
+                <a href="{% url 'profiles:friends' %}"><img src="{% static 'home/friends.png' %}"> Friends</a>
                 <a href="#"><img src="{% static 'home/group.png' %}"> Group</a>
                 <a href="#"><img src="{% static 'home/marketplace.png' %}"> Marketplace</a>
                 <a href="#"><img src="{% static 'home/watch.png' %}"> Watch</a>
